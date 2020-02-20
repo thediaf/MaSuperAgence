@@ -35,6 +35,15 @@ class Kernel extends BaseKernel
         }
     }
 
+    // public function registerBundles()
+    // {
+    //     return [
+    //         // ...
+    //         new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+    //         // ...
+    //     ];
+    // }
+
     protected function configureContainer(ContainerBuilder $container, LoaderInterface $loader)
     {
         $container->addResource(new FileResource($this->getProjectDir().'/config/bundles.php'));
@@ -58,4 +67,5 @@ class Kernel extends BaseKernel
         $routes->import($confDir.'/{routes}/*'.self::CONFIG_EXTS, '/', 'glob');
         $routes->import($confDir.'/{routes}'.self::CONFIG_EXTS, '/', 'glob');
     }
+
 }

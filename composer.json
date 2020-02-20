@@ -6,6 +6,9 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "cocur/slugify": "v3.2",
+        "doctrine/doctrine-fixtures-bundle": "3.2.2",
+        "fzaninotto/faker": "^1.9",
+        "knplabs/knp-paginator-bundle": "4.x-dev",
         "sensio/framework-extra-bundle": "^5.1",
         "symfony/asset": "4.1.*",
         "symfony/console": "4.1.*",
@@ -74,7 +77,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
+            "allow-contrib": true,
             "require": "4.1.*"
         }
     }

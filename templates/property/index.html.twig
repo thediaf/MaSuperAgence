@@ -5,6 +5,20 @@
 {% block body %}
     <div class="container mt-4 text-center">
         <h1>Voir tous nos biens</h1>
-        {# <p>rjfhnkgmfn n  vfgkjhgirojnhg enhf erwhdjcfkmlnwzn cfhubnhvdjkmnfrgfhj djfikjirhjrfc   fdkjfkjdhbjfhregv vhfr</p> #}
+        <div class="row">
+            {% for property in properties %}
+                <div class="col-md-4">
+                {% include "property/_property.html.twig" %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="pagination">
+            {{ knp_pagination_render(properties) }}
+        </div>
+
+        di
+
+
     </div>
 {% endblock%}
